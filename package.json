@@ -1,0 +1,19 @@
+{
+  "name": "importacao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prisma:client:format": "prisma format --schema=./prisma/schema.client.prisma",
+    "prisma:client:pull": "prisma db pull --schema=./prisma/schema.client.prisma",
+    "prisma:client:generate": "prisma generate --schema=./prisma/schema.client.prisma",
+    "prisma:v2:format": "prisma format --schema=./prisma/schema.v2.prisma",
+    "prisma:v2:pull": "prisma db pull --schema=./prisma/schema.v2.prisma",
+    "prisma:v2:generate": "prisma generate --schema=./prisma/schema.v2.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "4.9.0",
+    "prisma": "^4.9.0",
+    "uuid": "^9.0.0"
+  }
+}
